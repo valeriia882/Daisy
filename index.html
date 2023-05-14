@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кондитерська Daisy</title>
+    <link rel="stylesheet" href="style.css">
+    <meta property="og:title" content="Насолоджуйтесь смаком найкращих десертів та кондитерських виробів від кондитерської. У нас ви поласуєте ексклюзивні торти та тістечка з оригінальним оформленням та незабутнім смаком., які прикрасять будь-яку вашу подію. Замовте наші вироби і ми приготуємо їх для Вас.">
+    <meta name="description" content="Смачні десерти, тістечка та торти на замовлення від кращої кондитерської. Замовляйте та насолоджуйтесь святковим настроєм з нашими унікальними смаколиками.">
+    <meta property="og:title" content="Найсмачніші вироби">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="#">
+    <meta property="og:description" content="Найсмачніші торти та десерти в нашій кондитерській!">
+    <meta property="og:site_name" content="Кондитерська Daisy">
+    <meta name="author"content="Кучірка Валерія Валеріївна">
+    <meta name="coperight" lang="uk" content="Кондитерська Daisy">
+</head>
+<body>
+<header id="home">
+  <div class="imgfon">
+    <nav>
+      <div class="navimg">
+        <ul class="burger-menu">
+          <li><a href="#home">Головна</a></li>
+          <li><a href="#services">Послуги</a></li>
+          <li><a href="#about">Про нас</a></li>
+          <li><a href="#gallery">Фотогалерея</a></li>
+          <li><a href="#contacts">Контакти</a></li>
+        </ul>
+      </div>
+      <div class="burger-icon">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+<script type="text/javascript">
+    const burgerIcon = document.querySelector(".burger-icon");
+const burgerMenu = document.querySelector(".burger-menu");
+const navItems = document.querySelectorAll(".burger-menu li");
+
+burgerIcon.addEventListener("click", () => {
+  burgerIcon.classList.toggle("active");
+  burgerMenu.classList.toggle("active");
+});
+
+navItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    burgerIcon.classList.remove("active");
+    burgerMenu.classList.remove("active");
+  });
+});
+</script>
+    <section id="main">
+        <div class="container">
+            <h1>Кондитерська Daisy</h1>
+    </section>
+  </div>
+</header>
+
+<main>
+    <section id="services">
+           <div class="imgfon2"></div>
+            <div class="container">
+            <h2>Послуги</h2>
+            <div class="row">
+                <div class="col"> </div>
+                <div class="col">
+                    <p>Основні послуги - це приготування десертів та смачної кави, які клієнт може посмакувати як у закладі, так і взяти на виніс.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+          <h2>Про нас</h2>
+          <div class="video-container">
+                        <video src="https://media.istockphoto.com/id/1368954410/uk/%D0%B2%D1%96%D0%B4%D0%B5%D0%BE/%D0%B1%D1%80%D0%B0%D1%83%D0%BD%D1%96-%D0%BD%D0%B0-%D1%82%D0%B0%D1%80%D1%96%D0%BB%D1%86%D1%96-%D0%BD%D0%B0-%D1%82%D0%B5%D0%BC%D0%BD%D0%BE%D0%BC%D1%83-%D1%82%D0%BB%D1%96-%D0%BA%D1%80%D1%83%D0%BF%D0%BD%D0%B8%D0%BC-%D0%BF%D0%BB%D0%B0%D0%BD%D0%BE%D0%BC.mp4?s=mp4-640x640-is&k=20&c=hdjAGaPWCCd8iWZ6HlGJCXC6P-Er2scy4z15ItGCX_M=" controls></video>
+                <div class="video-text">
+                    <p>У кондитерській Daisy можна поласувати <strong>ексклюзивні торти та тістечка</strong> з оригінальним оформленням та незабутнім смаком.</p>
+                </div>
+            </div>
+        </div>
+     </section>
+
+    <section id="gallery">
+                <h2>Фотогалерея</h2>
+        <div class="image-row">
+                <img src="milks.jpg" alt="Фото товару" title="Молочний коктейль">
+                <img src="cupcakes.jpg" alt="Фото товару" title="Кекси">
+                <img src="tort.jpg" alt="Фото товару" title="Тістечко">
+        </div>
+    </section>
+</main>
+
+  <footer id="contacts">
+      <div class="wrappere">
+      <div class="contact-containere">
+        <div class="containere">
+          <h2>Контакти</h2>
+            <p>м. Львів, пр. Шевченка 1</p>
+            <a  href="tel:+380660000000">number: +380660000000</a><br>
+            <a  href="mailto:daisy@gmail.com">email: daisy@gmail.com</a>
+            <p>@dAisY</p>
+        </div>
+        <div class="form-containere">
+          <form action="#" method="POST">
+            <input type="text" id="name" name="name" placeholder="Ім'я" required>
+            <input type="email" id="email" name="email" placeholder="e-mail" required>
+            <textarea id="message" name="message" placeholder="Залиште відгук!" required></textarea>
+            <button type="submit" value="Submit" class="button">Надіслати</button>
+          </form>
+        </div>
+      </div>
+      <div class="image-containere">
+        <img src="tistechko.jpg" alt="Фото товару" title="Тортик">
+      </div>
+    </div>
+</footer>
+</body>
+</html>
